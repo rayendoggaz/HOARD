@@ -1,0 +1,87 @@
+/* pinnedFilesPage.css */
+
+/* Import Bungee font */
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+
+/* Container for pinned files */
+.pinned-files-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust the gap between items */
+  align-items: flex-start; /* Ensure items start from the top */
+}
+
+/* Title for pinned files */
+.pinned-files-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 20px; /* Adjust margin as needed */
+  font-family: 'Bungee', sans-serif; /* Apply Bungee font */
+  width: 100%; /* Force the title to take full width */
+}
+
+/* Individual pinned file box */
+.pinned-file {
+  flex: 1 0 calc(33.33% - 20px); /* Adjust the width of each box here */
+  background-color: #ffffff;
+  border: 1px solid #444444;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Bungee', sans-serif; /* Apply Bungee font */
+  margin-bottom: 20px; /* Add margin to create space between boxes */
+}
+
+/* Hover effect for pinned file box */
+.pinned-file:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 4px 0px #000; /* Neubrutalism shadow effect */
+}
+
+/* Pinned file name */
+.pinned-file-name {
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 20px;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+/* Adjustments for small screens */
+@media (max-width: 768px) {
+  .pinned-file {
+    flex-basis: calc(50% - 20px); /* Two files per row on smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .pinned-file {
+    flex-basis: calc(100% - 20px); /* Single file per row on extra small screens */
+  }
+}
+
+
+/* pinnedFilesPage.css */
+
+/* Neubrutalism style for the unpin button */
+.unpin-button {
+    background-color: #ffffff;
+    border: 1px solid #333333;
+    border-radius: 6px;
+    color: #333333;
+    font-size: 16px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  /* Neubrutalism hover effect */
+  .unpin-button:hover {
+    background-color: #333333;
+    color: #ffffff;
+    transform: translateY(-5px);
+    box-shadow: 4px 4px 0px #000; /* Neubrutalism shadow effect */
+  }
+  

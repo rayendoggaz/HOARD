@@ -1,0 +1,131 @@
+/* Font import */
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+
+
+.wel{
+  background-size: 40px 40px;
+  background-image: linear-gradient(to right, grey 1px, transparent 1px),
+    linear-gradient(to bottom, grey 1px, transparent 1px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Container styles */
+.welcome-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+  font-family: "Bungee", sans-serif; /* Apply Bungee font */
+}
+
+/* Title styles */
+.welcome-title {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+/* Message styles */
+.welcome-message {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+/* Button styles */
+.welcome-button {
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "Bungee", sans-serif; /* Apply Bungee font */
+  font-size: 16px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-left: 150px;
+}
+
+.welcome-button:hover {
+  color:#ffffff;
+  background-color: #000000; /* Lighter background color on hover */
+  transform: translateY(-5px); /* Add slight lift effect on hover */
+  box-shadow: 4px 4px 0px #000; /* Neubrutalism shadow effect */
+}
+
+/* Additional styles for smaller screens */
+@media screen and (max-width: 768px) {
+  .welcome-container {
+    padding: 0 10px;
+  }
+  
+  .welcome-title {
+    font-size: 36px;
+  }
+
+  .welcome-message {
+    font-size: 18px;
+  }
+
+  .welcome-button {
+    width: 150px;
+    height: 40px;
+    font-size: 14px;
+  }
+}
+
+.features-title{
+  padding-top: -40px;
+  padding-left: 100px;
+}
+
+/* Box container */
+.feature-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+/* Individual file box */
+.feature-card {
+  flex: 1 0 calc(33.33% - 20px); /* Adjust the width of each box here */
+  background-color: #ffffff;
+  border: 1px solid #444444;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Bungee', sans-serif; /* Apply Bungee font */
+  margin-right: 20px; /* Add some spacing between boxes */
+  display: inline-block; /* Display feature cards inline */
+  vertical-align: top; /* Align feature cards to the top */
+}
+
+/* Hover effect for file box */
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 4px 0px #000; /* Neubrutalism shadow effect */
+}
+
+
+
+/* Text styles for box content */
+.box-text {
+  font-size: 20px;
+  color: #000000;
+}
+
+/* Additional styles for smaller screens */
+@media screen and (max-width: 768px) {
+  .box-container {
+    flex-direction: column;
+  }
+
+  .file-box {
+    width: 100%; /* Take full width on smaller screens */
+    margin-right: 0; /* Remove margin for full width */
+    margin-bottom: 20px; /* Add some spacing between boxes */
+  }
+}

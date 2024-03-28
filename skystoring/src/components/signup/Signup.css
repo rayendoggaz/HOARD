@@ -1,0 +1,86 @@
+.create-folder-button {
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "Bungee", sans-serif; /* Apply Bungee font */
+  font-size: 16px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.create-folder-button:hover {
+  background-color: #000000 !important; /* Lighter background color on hover */
+  transform: translateY(-5px) !important; /* Add slight lift effect on hover */
+  box-shadow: 4px 4px 0px #000 !important; /* Neubrutalism shadow effect */
+}
+
+.but {
+  margin-right: 30px; /* Center the button horizontally */
+  width: 300px; /* Set the width of the button */
+}
+
+.body {
+  background-size: 40px 40px;
+  background-image: linear-gradient(to right, grey 1px, transparent 1px),
+    linear-gradient(to bottom, grey 1px, transparent 1px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+
+.text{
+  font-family: "Bungee", sans-serif; /* Apply Bungee font */
+}
+
+.link {
+  font-family: "Bungee", sans-serif; /* Apply Bungee font */
+  margin-right: 40px;
+}
+
+.link1 {
+  font-family: "Bungee", sans-serif; /* Apply Bungee font */
+  color: #000;
+}
+
+.signup-container {
+  background-color: #ffffff;
+  max-width: 800px; /* Set a maximum width for the container */
+  margin: 10% auto; /* Center the container vertically and horizontally */
+  padding: 20px; /* Reduce padding for spacing */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  box-shadow: 8px 8px 0px #000; /* Neubrutalism shadow effect */
+  width: 500px;
+  height: 500px;
+}
+
+.signup-container2 {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center the text content horizontally */
+  margin-left: 60px;
+  margin-right: 40px;
+}
+
+/* Use media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .signup-container {
+    padding: 20px; /* Reduce padding for smaller screens */
+    width: auto; /* Allow the container to expand based on content */
+    margin: 10% auto; /* Center the container horizontally */
+  }
+}

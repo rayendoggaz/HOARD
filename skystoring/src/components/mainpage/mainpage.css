@@ -1,0 +1,54 @@
+/* Update button styles */
+.neubrutalism-button {
+    font-family: 'Bungee', sans-serif; /* Apply Bungee font */
+    font-size: 18px; /* Adjust font size */
+    border-radius: 8px; /* Apply border radius */
+    padding: 12px 24px; /* Adjust padding */
+    margin-right: 12px; /* Add some margin between buttons */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    background-color: #333333 !important;
+    color: #ffffff !important;
+  }
+  
+  .neubrutalism-button:hover {
+    background-color: #000000 !important;
+    border-color: #000000 !important;
+  }
+  
+  .neubrutalism-button:focus {
+    outline: none; /* Remove outline on focus */
+  }
+  
+  /* Update file and folder titles */
+  #Title {
+    font-family: 'Bungee', sans-serif; /* Apply Bungee font */
+    font-size: 24px; /* Adjust font size */
+    color: #333333; /* Dark text color */
+    margin-bottom: 24px; /* Add some space below titles */
+  }
+  
+  /* Update suggestion text */
+  .suggestion-text {
+    font-family: 'Bungee', sans-serif; /* Apply Bungee font */
+    font-size: 18px; /* Adjust font size */
+    color: #666666; /* Slightly darker text color */
+  }
+  
+  /* Update content container */
+  .content-container {
+    padding: 24px;
+    min-height: 360px;
+    border-radius: 8px; /* Apply border radius */
+    background-color: #f9f9f9; /* Light background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  }
+  
+  /* Update footer */
+  .ant-layout-footer {
+    text-align: center; /* Center align footer content */
+    background-color: #f9f9f9; /* Light background color */
+    padding: 12px 0; /* Adjust padding */
+    border-top: 1px solid #e8e8e8; /* Add border at the top */
+  }
+
+  

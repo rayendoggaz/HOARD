@@ -1,0 +1,180 @@
+/* FileList.css */
+
+/* Import Bungee font */
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+
+/* Container for file boxes */
+.file-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust the gap between boxes */
+}
+
+/* Individual file box */
+.file-box {
+  flex: 1 0 calc(33.33% - 20px); /* Adjust the width of each box here */
+  background-color: #ffffff;
+  border: 1px solid #444444;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Bungee', sans-serif; /* Apply Bungee font */
+}
+
+/* Hover effect for file box */
+.file-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 4px 0px #000; /* Neubrutalism shadow effect */
+}
+
+/* File details */
+.file-details {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px; /* Adjust space between file details and buttons */
+}
+
+/* File name */
+.file-name {
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 20px;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+/* File actions */
+.file-actions {
+  display: flex;
+  gap: 10px; /* Adjust the gap between buttons */
+}
+
+/* Individual file action button */
+.file-actions .ant-btn {
+  padding: 16px 32px !important; /* Use !important to override conflicting styles */
+  font-size: 18px !important;
+  border-radius: 8px !important;
+  border: 1px solid #333333 !important;
+  background-color: #333333 !important;
+  color: #ffffff !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease !important;
+  font-family: 'Bungee', sans-serif !important;
+  min-width: 50px !important;
+}
+
+/* Override Ant Design modal button styles */
+.ant-modal-footer {
+  display: flex;
+  justify-content: center;
+}
+
+/* Style for primary button (OK button) */
+.ant-modal-footer .ant-btn-primary {
+  background-color: #333333; /* Change background color */
+  border-color: #333333; /* Change border color */
+  color: #ffffff; /* Change text color */
+  font-family: 'Bungee', sans-serif; /* Apply Bungee font */
+}
+
+/* Hover effect for primary button (OK button) */
+.ant-modal-footer .ant-btn-primary:hover:not(.ant-btn-disabled) {
+  background-color: #000000; /* Change background color on hover */
+  border-color: #000000; /* Change border color on hover */
+}
+
+/* Style for secondary button (Cancel button) */
+.ant-modal-footer .ant-btn:not(.ant-btn-primary) {
+  font-family: 'Bungee', sans-serif; /* Apply Bungee font */
+}
+
+/* Hover effect for secondary button (Cancel button) */
+.ant-modal-footer .ant-btn:not(.ant-btn-primary):hover:not(.ant-btn-disabled) {
+  color: #000000; /* Change text color on hover */
+  border-color: #333333;
+}
+
+
+
+/* Style for delete button */
+.file-actions button.delete {
+  background-color: #ff4d4f;
+  border-color: #ff4d4f;
+}
+
+/* Style for move button */
+.file-actions button.move {
+  background-color: #27ae60;
+  border-color: #27ae60;
+}
+
+/* Style for pin button */
+.file-actions button.pin {
+  background-color: #f39c12;
+  border-color: #f39c12;
+}
+
+/* Adjust the gap between the "Move to Folder" and "Pin" buttons */
+.file-actions button.move,
+.file-actions button.pin {
+  margin-right: 10px;
+}
+
+/* Hover effect for action buttons */
+.file-actions button:hover,
+.file-actions button:focus {
+  background-color: #000000 !important;
+  border-color: #000000 !important;
+  outline-style: none !important;
+}
+
+/* Adjustments for small screens */
+@media (max-width: 768px) {
+  .file-box {
+    flex-basis: calc(50% - 20px); /* Two files per row on smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .file-box {
+    flex-basis: calc(100% - 20px); /* Single file per row on extra small screens */
+  }
+}
+
+/* Container for upload file box */
+.upload-file-box {
+  margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+/* Style for upload file box */
+.upload-file-box .file-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px; /* Adjust width as needed */
+  height: 150px; /* Adjust height as needed */
+  border: 1px dashed #444444;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+/* Style for upload text */
+.upload-file-box .upload-text {
+  margin-top: 8px; /* Adjust margin as needed */
+  font-size: 18px; /* Adjust font size as needed */
+  font-weight: bold;
+  color: #666666;
+}
+
+/* Hover effect for upload file box */
+.upload-file-box .file-box:hover {
+  border-color: #999999;
+}
+
+

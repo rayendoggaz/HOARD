@@ -1,0 +1,102 @@
+.user-menu {
+  text-align: center;
+}
+
+.user-menu-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #c7c4c4;
+  border: 1px solid #c7c4c4;
+}
+
+.user-menu-username {
+  margin-top: 8px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #000;
+}
+
+.user-menu-button {
+  width: 120px;
+  height: 43px;
+  margin-top: 8px;
+  margin-right: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.logout-button-wrapper {
+  margin-top: 8px;
+}
+
+.logout-button-wrapper .ant-btn {
+  padding: 0; /* Optional: To remove extra padding from the LogoutButton */
+}
+
+.user-menu-button:hover {
+  background-color: #000 !important;
+  color: #fff !important;
+  transform: translateY(-5px);
+  box-shadow: 4px 4px 0px #000; /* Neubrutalism shadow effect */
+}
+
+.logout-button {
+  margin-top: 15px;
+  margin-right: 30px;
+}
+
+.logout-button .ant-btn {
+  width: 120px;
+  margin-left: 26px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.logout-button .ant-btn:hover {
+  background-color: #000 !important;
+  color: #fff !important;
+  transform: translateY(-5px);
+  box-shadow: 4px 4px 0px #000; /* Neubrutalism shadow effect */
+}
+
+/* Override border radius for search input */
+body
+  .ant-input-search
+  .css-dev-only-do-not-override-1qhpsh8.ant-input-group
+  .ant-input-affix-wrapper:not(:last-child) {
+  border-radius: 0 !important; /* Set border radius to 0 */
+}
+
+/* Change border color on input hover and focus */
+body
+  .ant-input-search:hover
+  .css-dev-only-do-not-override-1qhpsh8.ant-input-group
+  .ant-input-affix-wrapper:not(:last-child),
+body
+  .ant-input-search:focus
+  .css-dev-only-do-not-override-1qhpsh8.ant-input-group
+  .ant-input-affix-wrapper:not(:last-child) {
+  border-color: black !important; /* Change border color to black on hover and focus */
+}
+
+/* Override border radius for search button */
+body .unpin-button {
+  border-radius: 0 !important; /* Set border radius to 0 */
+}
+
+/* Change border color on button hover */
+body .unpin-button:hover {
+  border-color: black !important; /* Change border color to black on hover */
+}

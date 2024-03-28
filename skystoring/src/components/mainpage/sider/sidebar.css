@@ -1,0 +1,25 @@
+/* sidebar.css */
+
+/* Import the Bungee font */
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+
+/* Override the default antd menu item styles */
+.ant-menu-item {
+  font-family: 'Bungee', sans-serif !important; /* Apply Bungee font to menu items */
+  
+}
+
+/* Change the color of the menu item text when clicked */
+.ant-menu-item-selected.ant-menu-item-selected.ant-menu-item-selected a {
+  color: black !important; /* Change the color to black */
+}
+
+.ant-menu-light .ant-menu-item-selected,
+.ant-menu-light > .ant-menu .ant-menu-item-selected {
+    color: black !important; /* Override the color to black */
+}
+
+.ant-menu-light .ant-menu-item-selected,
+.ant-menu-light > .ant-menu .ant-menu-item-selected {
+    background-color: rgba(26, 26, 26, 0.04) !important; /* Override the background color to rgba(0, 0, 0, 0.04) */
+}

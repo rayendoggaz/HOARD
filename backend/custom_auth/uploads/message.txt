@@ -1,0 +1,20 @@
+Title of the Project: Simplification and Enhancement of the iCD Toolset for IT Competency Development
+
+Description:
+The project involves the development of a user-friendly web or mobile application to simplify and enhance the usability of the iCD (I Competency Dictionary) toolset. The iCD is a comprehensive framework for understanding and developing IT skills, initiated by the Information Promotion Agency (IPA) in Japan. The project aims to break down the complex structure of the iCD, integrate its components, and provide a more accessible platform for organizations and individuals to identify and develop necessary IT competencies.
+
+Problem Statement:
+The rapid evolution of the IT landscape has created a demand for skilled IT professionals, but organizations and individuals face challenges in identifying specific competencies required. The existing iCD toolset, while comprehensive, may be challenging to navigate, hindering its effective utilization. The project addresses these issues by simplifying the iCD toolset and making it more user-friendly.
+
+Objectives:
+1. Simplify the iCD toolset for easy navigation and understanding.
+2. Develop a user-friendly web or mobile application for accessing iCD resources.
+3. Integrate the Task and Skill dictionaries into a cohesive platform.
+4. Enhance search functionality to efficiently identify relevant information.
+5. Allow users to create personalized profiles for tracking progress.
+6. Promote workforce planning, skill gap analysis, and training program development within organizations.
+
+Approach and Methodology:
+The project adopts a hybrid approach, combining the agile method with elements of software reengineering. The agile method, specifically the Scrum methodology, allows for incremental and iterative development, adapting to evolving user needs. The Scrum framework includes roles such as Product Owner, Scrum Master, and Team, along with essential artifacts like Product Backlog, Sprint Backlog, and Product Increment. Sprints, lasting a few weeks, facilitate continuous improvement and goal achievement.
+
+The project's focus is on creating a solution that addresses the complexities of the IT landscape, enhances the iCD toolset's usability, and promotes the development of IT competencies in Japan and globally.

@@ -1,0 +1,96 @@
+/* SearchResult.css */
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+/* Container for search result boxes */
+.search-result-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* Individual search result box */
+  .search-result-box {
+    flex: 1 0 calc(33.33% - 20px); /* Adjust the width of each box here */
+    background-color: #ffffff;
+    border: 1px solid #444444;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Bungee', sans-serif ; /* Apply Bungee font */
+  }
+  
+  /* Hover effect for search result box */
+  .search-result-box:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 4px 4px 0px #000 !important; /* Neubrutalism shadow effect */
+  }
+  
+  /* File info within search result box */
+  .file-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px; /* Adjust space between file details and buttons */
+  }
+  
+  /* File name within search result box */
+  .file-name {
+    margin-right: 10px;
+    font-size: 15px;
+    color: #333333;
+    text-transform: uppercase;
+  }
+  
+  /* Container for buttons within search result box */
+  .button-container {
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* Button styles within search result box */
+  .button-container button {
+    padding: 16px 32px; /* Increased padding for larger buttons */
+    font-size: 18px; /* Increased text size */
+    border-radius: 8px;
+    border: 1px solid #333333 !important;
+    background-color: #333333 !important;
+    color: #ffffff !important;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+    font-family: 'Bungee', sans-serif; /* Apply Bungee font */
+    min-width: 80px;
+  }
+  
+  /* Style for download button */
+  .button-container button.download {
+    background-color: #49a7e0;
+    color: #fff;
+  }
+  
+  /* Style for delete button */
+  .button-container button.delete {
+    background-color: #e74c3c;
+    color: #fff;
+  }
+  
+  /* Hover effect for buttons within search result box */
+  .button-container button:hover {
+    opacity: 0.9;
+  }
+  
+  /* Adjustments for small screens */
+  @media (max-width: 768px) {
+    .search-result-box {
+      flex-basis: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .search-result-box {
+      flex-basis: calc(100% - 20px);
+    }
+  }
+  

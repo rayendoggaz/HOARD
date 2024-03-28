@@ -1,0 +1,83 @@
+/* FolderList.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+
+/* Styles for folder items */
+.folder-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.folder-item {
+  width: 200px;
+  height: 100px;
+  background-color: #ffffff;
+  border: 1px solid #444444;
+  border-radius: 8px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  padding: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: "Bungee", sans-serif; /* Apply Bungee font */
+}
+
+.folder-item:hover {
+  transform: translateY(-5px); /* Add slight lift effect on hover */
+  box-shadow: 4px 4px 0px #000; /* Neubrutalism shadow effect */
+}
+
+.folder-title {
+  font-size: 18px;
+  margin-top: 8px;
+}
+
+/* Adjust folder icon */
+.folder-item .anticon-folder {
+  color: #000000 !important; /* Change icon color to black */
+}
+
+/* Styles for Create Folder button */
+.create-folder-button {
+  margin-top: 10px;
+  margin-left: 0px;
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "Bungee", sans-serif; /* Apply Bungee font */
+  font-size: 16px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.create-folder-button:hover {
+  background-color: #000000 !important; /* Lighter background color on hover */
+  transform: translateY(-5px) !important; /* Add slight lift effect on hover */
+  box-shadow: 4px 4px 0px #000 !important; /* Neubrutalism shadow effect */
+}
+
+.delete-button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "Bungee", sans-serif; /* Apply Bungee font */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.delete-button:hover {
+  color: #000000 !important; /* Lighter background color on hover */
+}
